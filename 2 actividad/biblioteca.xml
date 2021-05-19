@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\DAVID\Desktop\xsd.xml">
+
+
+    <libro ID="L1234" numero_de_paginas="12345" tipo_clase="infantil">
+        <titulo>los amantes de verona</titulo>
+        <indice>
+            1. primera cosa
+            2. segunda cosa
+            3. tercera cosa
+        </indice>
+        <sinopsis> son unas personas muy malas que hacen daño a unas personas muy buenas</sinopsis>
+        <capitulo numero_de_paginas="100">
+            <titulo>el comienzo</titulo>
+            <contenido url="lkmpoaksd" />
+        </capitulo>
+        <capitulo numero_de_paginas="300">
+            <titulo>segunda parte</titulo>
+            <contenido url="lkmpoaksd" />
+        </capitulo>
+        <capitulo numero_de_paginas="12245">
+            <titulo>ultima parte</titulo>
+            <contenido url="lkmpoaksd" />
+        </capitulo>
+    </libro>
+    <revista ID="R1234" tipo_clase="otras" numero_paginas="1234">
+        <titulo>los armas mas brutales de good of war </titulo>
+        <num_revista>45</num_revista>
+        <indice>
+            1. primera cosa
+            2. segunda cosa
+            3. tercera cosa
+        </indice>
+        <seccion_revista numero_de_paginas="12">
+            <contenido url="lkmpoaksd" />
+        </seccion_revista>
+        <seccion_revista numero_de_paginas="24">
+            <contenido url="lkmpoaksd" />
+        </seccion_revista>
+    </revista>
+    <periodico ID="P1234" tipo_clase="nacional" fecha_publicacion="2021-05-07">
+        <indice>
+            1.primera cosa
+            2. segunda cosa
+            3. tercera cosa
+        </indice>
+        <seccion tipo_clase="deportes">
+            <articulo autor="jesus hernandez">
+                <contenido url="oifaoidf" />
+            </articulo>
+        </seccion>
+
+    </periodico>
+</biblioteca>

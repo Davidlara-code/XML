@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE biblioteca[
+
+<!ELEMENT biblioteca (libro*,revista*,periodico*)>
+
+<!ATTLIST libro ID ID #REQUIRED> 
+<!ATTLIST libro numero_de_paginas CDATA #REQUIRED>
+<!ELEMENT libro (titulo+,indice+,sinopsis+,capitulo+)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+<!ELEMENT capitulo (titulo+,contenido+)>
+<!ATTLIST capitulo numero_de_paginas CDATA #REQUIRED>
+<!ELEMENT contenido EMPTY>
+<!ATTLIST libro tipo_clase (novela |infantil|didactico) #REQUIRED>
+
+<!ELEMENT revista (titulo+,num_revista+,indice+,seccion_revista+)>
+<!ELEMENT num_revista (#PCDATA)>
+<!ELEMENT seccion_revista (contenido*)>
+<!ATTLIST seccion_revista numero_de_paginas CDATA #REQUIRED>
+<!ATTLIST contenido url CDATA #IMPLIED>
+<!ATTLIST revista ID ID #REQUIRED>
+<!ATTLIST revista tipo_clase (informatica|corazon|coches|investigacion|otras) #REQUIRED>
+<!ATTLIST revista num_pag CDATA #REQUIRED>
+<!ATTLIST seccion_rev num_pag CDATA #IMPLIED>
+
+<!ELEMENT periodico (indice+,seccion+)>
+<!ELEMENT seccion (articulo+)>
+<!ELEMENT articulo (contenido+)>
+<!ATTLIST periodico ID ID #REQUIRED>
+<!ATTLIST periodico tipo_clase (nacional|internacional) #REQUIRED>
+<!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
+<!ATTLIST seccion tipo_seccion (economica|deportes|nacional|internacional|opinion) #REQUIRED>
+<!ATTLIST articulo autor CDATA #REQUIRED>
+]>
